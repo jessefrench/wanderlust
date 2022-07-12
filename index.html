@@ -21,21 +21,33 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<header>
+		<header id="home">
 			<nav>
 				<ul>
-					<li class="first"><a href="#">Wanderlust.</a></li>
-					<li class="main"><a href="#">HOME</a></li>
+					<li class="first"><a href="#home">Wanderlust.</a></li>
+					<li class="main"><a href="#home">HOME</a></li>
 					<li class="main"><a href="#services">SERVICES</a></li>
 					<li class="main"><a href="#about">ABOUT</a></li>
 					<li class="main"><a href="#stylists">STYLISTS</a></li>
 					<li class="main"><a href="#offers">OFFERS</a></li>
 					<li class="main"><a href="#lookbook">LOOKBOOK</a></li>
 					<li class="last"><a href="#contact">- CONTACT</a></li>
-					<li class="menu"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+					<li id="pg-content" class="menu" style="cursor: pointer" onclick="openSM()">&#9776;</li>
 				</ul>
 			</nav>
 		</header>
+		<div id="mySidemenu" class="sidemenu">
+			<a href="javascript:void(0)" class="close" onclick="closeSM()">&times;</a>
+			<div class="sm-wrapper">
+				<a href="#home" onclick="closeSM()">HOME</a>
+				<a href="#services" onclick="closeSM()">SERVICES</a>
+				<a href="#about" onclick="closeSM()">ABOUT</a>
+				<a href="#stylists" onclick="closeSM()">STYLISTS</a>
+				<a href="#offers" onclick="closeSM()">OFFERS</a>
+				<a href="#lookbook" onclick="closeSM()">LOOKBOOK</a>
+				<a href="#contact" onclick="closeSM()">CONTACT</a>
+			</div>
+		</div>
 		<main>
 			<h1>BOLD, BRAVE, AND BEAUTIFUL</h1>
 			<p>CHANGE IT UP WITH A NEW LOOK THAT'S AS FEARLESS AS YOU</p>
@@ -84,7 +96,7 @@
 					<a href="#lookbook">- SEE LOOKBOOK</a>
 				</section>
 				<section class="right">
-					<video controls
+					<video controls preload="auto" poster="Assets/poster.png"
     					src="Assets/pexels-rodnae-productions-7754434.mp4">
 					</video>
 				</section>
@@ -96,21 +108,21 @@
 				<section class="profiles">
 					<section class="individuals">
 						<img src="Assets/gabriel-silverio-u3WmDyKGsrY-unsplash.jpg">
-						<div>
+						<div class="title">
 							<h3>AMBER LAKE</h3>
 							<span>-COLORIST</span>
 						</div>
 					</section>
 					<section class="individuals">
 						<img src="Assets/prince-akachi-LWkFHEGpleE-unsplash.jpg">
-						<div>
+						<div class="title">
 							<h3>LAUREN SMITH</h3>
 							<span>-STYLIST</span>
 						</div>
 					</section>
 					<section class="individuals">
 						<img src="Assets/salha-frija-dsQoLK2N7DQ2-unsplash.jpg">
-						<div>
+						<div class="title">
 							<h3>RACHAEL WILLIAMS</h3>
 							<span>-BEAUTICIAN</span>
 						</div>
@@ -141,8 +153,8 @@
 				<li><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
 				<li><a href="mailto:"><i class="fa-regular fa-envelope"></i></a></li>
 			</ul>
-			<h6><a href="https://jessefrench.netlify.app" target="_blank">© Jesse French</a></h6>
+			<h6><a href="https://jessefrenchdev.com" target="_blank">© Jesse French</a></h6>
 		</footer>
-		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="main.js"></script>
 	</body>
 </html>
