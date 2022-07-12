@@ -483,7 +483,7 @@ footer h6{
   }
   h1{
     width: 90%;
-    margin-left: 2%;
+    margin-left: 4%;
     padding-top: 75px;
   }
   main p{
@@ -518,8 +518,11 @@ footer h6{
   section.offer{
     text-align: center;
   }
-  section.offer h4, section.offer h3, section.offer span{
+  section.offer h4, section.offer span{
     margin-left: 0; 
+  }
+  section.offer h3{
+    margin-left: 4%;
   }
   section.grid img.two{
     width: 95%;
@@ -543,7 +546,7 @@ footer h6{
     margin-bottom: 25px;
   }
   section.individuals{
-    width: 95%;
+    width: 100%;
   }
   div.title{
     width: 50%;
