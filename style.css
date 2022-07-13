@@ -484,15 +484,20 @@ footer h6{
   h1{
     width: 60%;
     margin-left: 4%;
+    margin-bottom: 25px;
     padding-top: 75px;
     font-size: 6rem;
   }
   main p{
     width: 65%;
     margin-left: 4%;
+    margin-bottom: 30px;
   }
   main a{
+    display: block;
+    margin-bottom: 175px;
     margin-left: 4%;
+    width: 165px;
   }
   section.left{
     text-align: center;
