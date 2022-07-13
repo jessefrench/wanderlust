@@ -82,7 +82,7 @@ li.last{
 .sidemenu a{
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 45px;
+  font-size: 35px;
   color: black;
   display: block;
   letter-spacing: 5px;
@@ -432,14 +432,10 @@ footer h6{
     display: none;
   }
   li.first{
-    width: 45%;
-    text-align: start;
-    margin-left: 25px;
+    width: 90%;
   }
   li.menu{
-    display: inline-block;
-    width: 45%;
-    text-align: end;
+    display: contents;
     font-size: 24px;
   }
 }
@@ -471,43 +467,32 @@ footer h6{
   div.title h3{
     font-size: 100%;
   }
+  li.first{
+    width: 75%;
+  }
 }
 /******************TABLET*******************/
 
 /******************MOBILE*******************/
 @media screen and (max-width: 628px){
   main{
-    text-align: center;
-    background-image: none;
-    background-color: #d5adb5;
+    background-position: left;
+  }
+  main section{
+    display: none;
   }
   h1{
-    width: 90%;
+    width: 60%;
     margin-left: 4%;
     padding-top: 75px;
+    font-size: 6rem;
   }
   main p{
-    width: 90%;
+    width: 65%;
     margin-left: 4%;
   }
   main a{
-    margin-left: 0;
-  }
-  main section{
-    margin: 50px auto;
-    text-align: center;
-    height: 250px;
-  }
-  main section h4{
-    padding-left: 0;
-    margin: 20px auto;
-  }
-  main section h3{
-    margin: 0 auto;
-    padding-bottom: 40px;
-  }
-  main section a{
-    margin-left: 0;
+    margin-left: 4%;
   }
   section.left{
     text-align: center;
@@ -530,14 +515,8 @@ footer h6{
   }
 } 
 @media screen and (max-width: 575px){
-  li.first{
-    width: 40%;
-  }
-  li.menu{
-    width: 40%;
-  }
   section.one, section.two, section.three{
-    width: 95%;
+    width: 100%;
   }
   section.quality{
     height: 850px;
